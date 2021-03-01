@@ -26,7 +26,7 @@ SECRET_KEY = '+nd678ypv4z_kj++&fejl(=_w&a+ci%o2(ahmc=$$57r$p@ntp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
