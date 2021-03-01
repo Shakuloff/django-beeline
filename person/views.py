@@ -28,6 +28,7 @@ def index(request):
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     detail_filters = detail_filter(request.GET, queryset=contact_list)
+    sex = ['Количество пользователей', 'Женщины', 'Мужчины']
     print(detail_filters)
     return render(request, 'index.html', {
         'total_query': total_query,
@@ -38,6 +39,7 @@ def index(request):
         'countries_list': countries_list,
         'jobs_filter': jobs_filter,
         'filter': detail_filters,
+        'sex': sex,
     })
 
 
