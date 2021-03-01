@@ -89,17 +89,17 @@
                                 </a>
                             </li>
                         {% endif %}
-                        <li class="page-item disabled d-none d-md-block d-lg-none">
+                        <li class="page-item disabled d-none d-lg-block d-xl-none">
                             <a class="page-link" href="#">
                             Страница {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}.
                             </a>
                         </li>
-                        <li class="page-item disabled float-end d-none d-md-block d-lg-none">
+                        <li class="page-item disabled float-end d-none d-lg-block d-xl-none">
                             <a class="page-link">
                                 Записей в таблице  {{ page_obj|length }}
                             </a>
                         </li>
-                        <li class="page-item disabled float-end d-none d-md-block d-lg-none">
+                        <li class="page-item disabled float-end d-none d-lg-block d-xl-none">
                             <a class="page-link">
                                 Всего записей  {{ total_query }}
                             </a>
