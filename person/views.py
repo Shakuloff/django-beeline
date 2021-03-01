@@ -211,7 +211,7 @@ def chart(request):
     agr_labels = ['Средний возраст', 'Минимальный возраст', 'Максимальный возраст']
     agr = [sum_age['Age__avg'], min_age['Age__min'], max_age['Age__max']]
 
-    sex = ['Количество пользователей', 'Женщины', 'Мужчины']
+    sex = ['Количество пользователей', 'Мужчины', 'Женщины']
     sex_num = [count['Age__count'], len(man), len(woman)]
     # print(len(man), len(woman))
 
