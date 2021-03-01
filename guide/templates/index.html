@@ -117,8 +117,9 @@
 
                 {% endif %}
 
-                <div id="container">
-                <div class="row">
+                {% if sex %}
+                    <div id="container">
+                    <div class="row">
                     <div class="col-md-6">
                         <canvas id="sex-chart" data-url="{% url 'chart' %}"></canvas>
                     </div>
@@ -128,6 +129,7 @@
                         <canvas id="salary-chart" data-url="{% url 'chart' %}"></canvas>
                     </div>
                 </div>
+                {% endif %}
 
 
 {% endblock %}
