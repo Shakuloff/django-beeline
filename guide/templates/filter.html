@@ -86,12 +86,12 @@
                                 </a>
                             </li>
                         {% endif %}
-                        <li class="page-item disabled">
+                        <li class="page-item disabled d-none d-lg-block d-xl-none">
                             <a class="page-link" href="#">
                             Страница {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}.
                             </a>
                         </li>
-                        <li class="page-item disabled float-end">
+                        <li class="page-item disabled float-end d-none d-lg-block d-xl-none">
                             <a class="page-link">
                                 Всего записей  {{ filter.qs|length }}
                             </a>
